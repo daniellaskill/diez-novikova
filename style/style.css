@@ -55,14 +55,25 @@ a {
 
 .page-header {
     position: relative;
+    margin: 0 55px;
     background-color: #000;
 }
+
 .page-header__inner {
-    padding: 24px 16px 16px;
+    /*padding: 24px 16px 16px;*/
+}
+.logo {
+    flex-basis: 25%;
+    width: 25%;
 }
 .logo img{
     width: 51px;
     height: 31px;
+}
+
+.nav-main {
+    flex-basis: 75%;
+    width: 75%;
 }
 
 .nav-main__list {
@@ -70,6 +81,7 @@ a {
     margin: 0;
     padding: 0;
 }
+
 .nav-main__item {
     list-style: none;
     font-family: 'PT Sans', sans-serif;
@@ -96,16 +108,19 @@ a {
 
 .promo__inner {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    padding: 16px;
+    margin: 0 55px;
+    padding: 100px 0;
 }
 
 .promo__item {
-
+    flex-basis: 100%;
+    width: 100%;
 }
 
 .promo__title {
+    margin: 0;
     font-family: 'Prata';
     font-weight: normal;
     font-style: normal;
@@ -117,9 +132,15 @@ a {
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
+    letter-spacing: 0.5px;
 }
 
-
+.trial-lesson {
+    flex-basis: 100%;
+    width: 100%; 
+    border: 1px solid #000;
+    background-color: #fff;
+}
 
 
 
@@ -212,7 +233,6 @@ a {
     }
     .nav-main {
         display: flex;
-        flex-grow: 1;
         align-items: center;
         justify-content: flex-end;
         margin-left: auto;
@@ -229,4 +249,38 @@ a {
         color: #202020;
     }
 
-  
+    .promo__inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 55px;
+        padding: 100px 0;
+    }
+
+    .promo__item {
+        flex-basis: 75%;
+        width: 75%;
+    }
+
+    /*.promo__title {
+        margin: 0;
+        font-family: 'Prata';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 55px;
+    }*/
+
+    /*.promo__description {
+        font-family: 'PT Sans', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+    }*/
+
+    .trial-lesson {
+        flex-basis: 25%;
+        width: 25%; 
+        border: 1px solid #000;
+        background-color: #fff;
+    }
