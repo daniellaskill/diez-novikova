@@ -54,14 +54,17 @@ a {
 }
 
 .page-header {
+    position: relative;
     background-color: #000;
 }
 .page-header__inner {
     padding: 24px 16px 16px;
 }
-.logo {
-    background-image: url();
+.logo img{
+    width: 51px;
+    height: 31px;
 }
+
 .nav-main__list {
     display: block;
     margin: 0;
@@ -72,6 +75,7 @@ a {
     font-family: 'PT Sans', sans-serif;
     font-weight: normal;
     font-style: normal;
+    font-size: 16px;
     letter-spacing: 0.8px;
     text-transform: uppercase;
 }
@@ -83,19 +87,44 @@ a {
 
 /*--------------------------------------*/
 
-
-
 .promo {
-    background-image: url();
+    color: #fff;
+    background-color: #1f2122;
+    background-size: cover;
+    background-position: center;
 }
+
 .promo__inner {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+
+.promo__item {
+
+}
+
+.promo__title {
+    font-family: 'Prata';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 55px;
+}
+
+.promo__description {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
 }
 
 
 
 
-.row {
+
+
+/*.row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -164,7 +193,7 @@ a {
 .col-12 {  
     flex-basis: 100%;
     width: 100%;    
-}
+}*/
 
 
 /*----------------------------------------------*/
