@@ -13,9 +13,9 @@
 			<a class="logo" href="#">
 				<img src="images/Diez.svg" alt="Diez">
 			</a>
-			<nav class="nav-main">
-				<!-- <button class="toggler" id="toggler" type="button"><span>Меню</span></button> -->
-				<ul class="nav-main__list">
+			<nav class="nav-main j-nav-main">
+				<button class="toggler j-burger" id="toggler" type="button"><span>Меню</span></button>
+				<ul class="nav-main__list j-nav-main__list">
 					<li class="nav-main__item"><a href="#">Направления</a></li>
 					<li class="nav-main__item"><a href="#">О школе</a></li>
 					<li class="nav-main__item"><a href="#">Видео</a></li>
@@ -28,23 +28,33 @@
 		<section class="promo" style="background-image: url(images/main_bg.jpg);">
 			<div class="promo__inner">
 				<div class="promo__item">
-					<h1 class="promo__title">Diez - школа музыкального искусства</h1>
+					<h1 class="promo__title promo__title--mobile">Школа музыкального искусства</h1>
+					<h1 class="promo__title promo__title--desktop">Diez - школа музыкального искусства</h1>
 					<p class="promo__description">Научим петь, играть на инструментах, не бояться<br> сцены и получать удовольствие от музыки</p>
 				</div>
-				<form class="trial-lesson">
-					<!-- <div>
-						<input type="text" placeholder="Имя">
-					</div>
-					<div>
-						<input type="text" placeholder="Телефон">
-					</div>
-					<div>
-						<input type="text" placeholder="Направления">
-					</div> -->
-				</form>
+
+				<container class="form">
+					<form class="trial-lesson" action="#" method="post">
+						<div class="trial-lesson__field">
+							<input type="text" placeholder="Имя" name="name" id="" pattern="[0-9]{7,13}" title="+7 (___) ___-__-__" required>
+						</div>
+						<div class="trial-lesson__field">
+							<input type="tel" placeholder="Телефон" name="tel" id="" required>
+						</div>
+						<div class="trial-lesson__field">
+							<select> 
+								<option>Направления</option>
+							</select>
+						</div>
+						<button type="submit">Записаться</button> -->
+					</form>
+				</container>
+				<button class="trial-lesson-btn">Вводный урок</button>
 			</div>
 		</section>
 	</main>
 	<footer></footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

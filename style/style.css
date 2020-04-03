@@ -53,9 +53,14 @@ a {
     text-decoration: none;
 }
 
+/*input:focus {
+    border: 1px solid #000;
+    box-shadow: inset hoff voff blur color;
+}*/
+
 .page-header {
     position: relative;
-    margin: 0 55px;
+    padding: 0 16px;
     background-color: #000;
 }
 
@@ -76,11 +81,17 @@ a {
     width: 75%;
 }
 
-.nav-main__list {
+.nav-main--active .nav-main__list {
     display: block;
+}
+
+.nav-main__list {
+    display: none;
     margin: 0;
     padding: 0;
 }
+
+
 
 .nav-main__item {
     list-style: none;
@@ -110,8 +121,7 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0 55px;
-    padding: 100px 0;
+    padding: 100px 16px;
 }
 
 .promo__item {
@@ -121,9 +131,14 @@ a {
 
 .promo__title {
     margin: 0;
-    font-family: 'Prata';
+    font-family: 'Prata', serif;
     font-weight: normal;
     font-style: normal;
+    font-size: 32px;
+}
+
+.promo__title--desktop {
+    display: none;
     font-size: 55px;
 }
 
@@ -131,18 +146,20 @@ a {
     font-family: 'PT Sans', sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 0.5px;
 }
 
 .trial-lesson {
+    display: none;
     flex-basis: 100%;
     width: 100%; 
     border: 1px solid #000;
     background-color: #fff;
 }
 
-
+.trial-lesson-btn {
+}
 
 
 /*.row {
@@ -262,25 +279,32 @@ a {
         width: 75%;
     }
 
-    /*.promo__title {
-        margin: 0;
-        font-family: 'Prata';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 55px;
-    }*/
+    .promo__title--desktop {
+        display: block;
+    }
 
-    /*.promo__description {
-        font-family: 'PT Sans', sans-serif;
-        font-weight: normal;
-        font-style: normal;
+    .promo__title--mobile {
+          display: none;  
+    }
+    .promo__description {
         font-size: 20px;
         letter-spacing: 0.5px;
-    }*/
+    }
 
     .trial-lesson {
         flex-basis: 25%;
         width: 25%; 
+        padding: 0 30px;
         border: 1px solid #000;
         background-color: #fff;
+    }
+
+    .trial-lesson-btn {
+        display: none;
+    }
+
+    .trial-lesson__field input,
+    select {
+        margin: 0 auto;
+        width: 100%;
     }
