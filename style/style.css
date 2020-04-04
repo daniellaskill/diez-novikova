@@ -59,7 +59,10 @@ a {
 }*/
 
 .page-header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     /*background-color: #000;*/
 }
 
@@ -67,13 +70,13 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 23px 16px;
 }
 .logo {
-    flex-basis: 16.66666%;
-    width: 16.66666%;
+    flex-basis: 33.33333%;
+    width: 33.33333%;
 }
 .logo img{
     width: 51px;
@@ -113,9 +116,11 @@ a {
     padding: 8px 0;
 }
 
-/*.toggler {
-    display: none;
-}*/
+.j-burger .toggler {
+    flex-basis: 16.66666%;
+    width: 16.66666%;
+    /*display: none;*/
+}
 
 /*.j-burger .toggler {
     display: flex;
@@ -168,6 +173,8 @@ a {
 }
 
 .promo__description {
+    flex-basis: 66.66666%;
+    width: 66.66666%; 
     font-family: 'PT Sans', sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -301,6 +308,8 @@ a {
         color: #202020;
     }
 
+/*-------------------------------*/
+
     .promo__inner {
         display: flex;
         flex-direction: row;
@@ -321,7 +330,10 @@ a {
     .promo__title--mobile {
           display: none;  
     }
+
     .promo__description {
+        flex-basis: 41.66666%;
+        width: 41.66666%;
         font-size: 20px;
         letter-spacing: 0.5px;
     }
@@ -338,8 +350,8 @@ a {
         display: none;
     }
 
-    .trial-lesson__field input,
+    /*.trial-lesson__field input,
     select {
         margin: 0 auto;
         width: 100%;
-    }
+    }*/
