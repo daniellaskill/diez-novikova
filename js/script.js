@@ -5,3 +5,11 @@ $(document).ready(function() {
 
 	})
 });
+
+$(document).ready(function() {
+	$(".j-trial-lesson-btn").click(function(){
+		// $(".j-form").toggleClass("form--active");
+		$(".j-trial-lesson").slideToggle();
+
+	})
+});
