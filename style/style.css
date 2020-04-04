@@ -56,6 +56,10 @@ a {
     text-decoration: none;
 }
 
+.container {
+    width: 320px;
+    margin: 0 auto;
+}
 /*input:focus {
     border: 1px solid #000;
     box-shadow: inset hoff voff blur color;
@@ -292,7 +296,12 @@ a {
 
 
 /*----------------------------------------------*/
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
+
+    .container {
+    width: 1280px;
+    margin: 0 auto;
+}
 
     .page-header {
         /*position: fixed;*/
