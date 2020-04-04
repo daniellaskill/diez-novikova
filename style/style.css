@@ -154,7 +154,7 @@ a {
 .promo__inner {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 50px 16px 33px;
 }
 
@@ -189,7 +189,12 @@ a {
 
 .promo__description--desktop {
     display: none;
+    flex-basis: 75%;
+    width: 75%;
+    font-size: 20px;
+    letter-spacing: 0.5px;
 }
+
 .form--active .form {
     display: block;
     flex-basis: 100%;
@@ -206,6 +211,7 @@ a {
 
 .trial-lesson-btn {
     padding: 26px 0;
+    font-size: 16px;
     text-transform: uppercase;
     color: #fff;
     border-width: 0px;
@@ -290,7 +296,6 @@ a {
 
     .page-header {
         /*position: fixed;*/
-        background-color: transparent;
     }
 
     .page-header__inner {
@@ -299,6 +304,8 @@ a {
         flex-wrap: wrap;
         align-items: flex-end;
         justify-content: space-between;
+        margin: 23px 55px;
+        padding: 0;
     }
 
     .logo {
@@ -306,11 +313,17 @@ a {
         width: 25%;
     }
 
+    .logo img{
+        width: 51px;
+        height: 31px;
+    }
+
     .nav-main {
         display: flex;
         align-items: center;
         justify-content: flex-end;
         margin-left: auto;
+        background-color: transparent;
     }
 
     .nav-main__list {
@@ -327,17 +340,24 @@ a {
         color: #202020;
     }
 
+    .toggler {
+        display: none;
+    }
+
 /*-------------------------------*/
 
     .promo__inner {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
         margin: 0 55px;
         padding: 100px 0;
     }
 
     .promo__item {
+        margin: 0;
+        padding: 0;
         flex-basis: 75%;
         width: 75%;
     }
@@ -347,14 +367,7 @@ a {
     }
 
     .promo__title--mobile {
-          display: none;  
-    }
-
-    .promo__description {
-        flex-basis: 41.66666%;
-        width: 41.66666%;
-        font-size: 20px;
-        letter-spacing: 0.5px;
+        display: none;  
     }
 
     .promo__description--desktop {
@@ -365,10 +378,18 @@ a {
         display: none;
     }
 
-    .trial-lesson {
+    .form {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
         flex-basis: 25%;
         width: 25%; 
-        padding: 0 30px;
+    }
+ 
+    .trial-lesson {
+        display: block;
+        padding: 10px 20px;
         border: 1px solid #000;
         background-color: #fff;
     }
@@ -382,3 +403,5 @@ a {
         margin: 0 auto;
         width: 100%;
     }*/
+
+    
