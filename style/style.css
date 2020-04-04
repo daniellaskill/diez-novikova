@@ -60,13 +60,14 @@ a {
 
 .page-header {
     position: relative;
-    background-color: #000;
+    /*background-color: #000;*/
 }
 
 .page-header__inner {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     padding: 23px 16px;
 }
@@ -81,19 +82,21 @@ a {
 
 .nav-main {
     display: flex;
+    flex-direction: column;
     align-content: flex-end;
-    flex-basis: 8.33333%;
-    /*width: 8.33333%;*/
+    background-color: #000;
 }
 
 .nav-main--active .nav-main__list {
     display: block;
+    flex-basis: 100%;
+    width: 100%;
 }
 
 .nav-main__list {
     display: none;
     margin: 0;
-    padding: 0;
+    padding: 10px 20px;
 }
 
 .nav-main__item {
@@ -112,9 +115,9 @@ a {
 
 /*.toggler {
     display: none;
-}
+}*/
 
-.j-burger .toggler {
+/*.j-burger .toggler {
     display: flex;
     align-items: center;
     position: absolute;
