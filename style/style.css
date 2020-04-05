@@ -210,8 +210,43 @@ a {
     display: none;
     flex-basis: 100%;
     width: 100%; 
+    padding: 0;
     border: 1px solid #000;
     background-color: #fff;
+}
+
+.trial-lesson__title {
+    margin: 20px 30px 26px ;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+    color: #000;
+}
+
+.trial-lesson__item {
+    margin: 0 30px 60px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: #000;
+}
+
+input, select{
+    border: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+}
+
+select {
+    width: 100%;
+}
+.trial-lesson__field {
+    margin: 0 30px 25px;
+    border-bottom: 2px solid #000;
 }
 
 .trial-lesson-btn {
@@ -222,6 +257,19 @@ a {
     border-width: 0px;
     background-color: #eec643;
 }
+
+button[type="submit"] {
+    margin-top: 60px;
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #fff;
+    border-width: 0px;
+    background-color: #000;
+}
+
 
 /*-----------------------------------*/
 
@@ -246,82 +294,6 @@ a {
     font-style: normal;
     font-size: 30px;
 }
-
-
-
-
-
-/*.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.col {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.col-1 {  
-    flex-basis: 8.33333%;
-    width: 8.33333%; 
-}
-
-.col-2 {  
-    flex-basis: 16.66666%;
-    width: 16.66666%; 
-}
-
-.col-3 {  
-    flex-basis: 25%;
-    width: 25%; 
-}
-
-.col-4 {  
-    flex-basis: 33.33333%;
-    width: 33.33333%; 
-}
-
-.col-5 {  
-    flex-basis: 41.66666%;
-    width: 41.66666%; 
-}
-
-.col-6 {  
-    flex-basis: 50%;    
-    width: 50%;      
-}
-
-.col-7 {  
-    flex-basis: 58.33333%;
-    width: 58.33333%; 
-}
-
-.col-8 {  
-    flex-basis: 66.66666%;
-    width: 66.66666%; 
-}
-
-.col-9 {  
-    flex-basis: 75%;
-    width: 75%;      
-}
-
-.col-10 {  
-    flex-basis: 83.11111%;
-    width: 83.11111%; 
-}
-
-.col-11 {  
-    flex-basis: 91.66666%;
-    width: 91.66666%; 
-}
-
-.col-12 {  
-    flex-basis: 100%;
-    width: 100%;    
-}*/
-
 
 /*----------------------------------------------*/
 @media (min-width: 1280px) {
@@ -419,6 +391,8 @@ a {
 
     .promo__description--desktop {
         display: block;
+        flex-basis: 58.33333%;
+        width: 58.33333%;
     }
 
     .promo__description--mobile {
@@ -433,10 +407,9 @@ a {
         flex-basis: 25%;
         width: 25%; 
     }
- 
+
     .trial-lesson {
         display: block;
-        border: 1px solid #000;
         background-color: #fff;
     }
 
@@ -450,7 +423,7 @@ a {
         width: 100%;
     }*/
 
-    
+   
 /*-------------------------------*/
 
     .directions {
@@ -461,10 +434,11 @@ a {
 
     .directions__title {        
         position: absolute;
+        transform-origin: left bottom;
+        bottom: 30px;
+        left: 60px;
         transform: rotate(-90deg);
         /*top: 90px;*/
-        left: 0px;
-        right: 1155px;
         width: 570px;
 
     }
