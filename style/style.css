@@ -295,14 +295,37 @@ button[type="submit"] {
     font-size: 30px;
 }
 
-img {
-     max-width: 100%;
-     height: auto;
+.directions__card {
+    height: 145px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.directions__card {
-    padding-left: 15px;
-    padding-right: 15px;
+.directions__card-1 {
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.directions__card-2 {
+    flex-basis: 100%;
+    width: 100%;
+    
+}
+
+.directions__card-3 {
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.directions__card-4 {
+    display: none;
+    flex-basis: 25%;
+    width: 25%;
+}
+
+ .directions__card-5 {
+
+    background-color: #eec643;
 }
 
 
@@ -449,13 +472,44 @@ img {
         position: absolute;
         transform-origin: left bottom;
         bottom: 30px;
-        left: 60px;
+        left: 55px;
         transform: rotate(-90deg);
-        /*top: 90px;*/
         width: 570px;
 
     }
 
     .directions__title-topic {
         font-size: 50px;
+    }
+
+    .directions__card {
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 30px;
+        height: 270px;
+    }
+
+     .directions__card-1 {
+        flex-basis: 41.66666%;
+        width: 41.66666%;
+     }
+
+     .directions__card-2 {
+        flex-basis: 50%;    
+        width: 50%;
+     }
+
+     .directions__card-3 {
+        flex-basis: 41.66666%;
+        width: 41.66666%;
+     }
+
+     .directions__card-4 {
+        display: block;
+     }
+
+     .directions__card-5 {
+        flex-basis: 25%;
+        width: 25%;
+     }
 }
