@@ -295,6 +295,18 @@ button[type="submit"] {
     font-size: 30px;
 }
 
+img {
+     max-width: 100%;
+     height: auto;
+}
+
+.directions__card {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
 /*----------------------------------------------*/
 @media (min-width: 1280px) {
 
@@ -429,6 +441,7 @@ button[type="submit"] {
     .directions {
         position: relative;
         flex-direction: row;
+        padding-left: 70px;
 
     }
 
