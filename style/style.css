@@ -323,11 +323,24 @@ button[type="submit"] {
     width: 25%;
 }
 
- .directions__card-5 {
+.directions__card-5 {
+    flex-basis: 25%;
+    width: 25%;
+}
 
+.directions__card--mobile {
+    position: absolute;
+    transform-origin: left bottom;
+    bottom: 0px;
+    right: 30px;
+    transform: rotate(-90deg);
+    width: 145px;    
     background-color: #eec643;
 }
 
+.directions__card--desktop {
+    display: none;
+}
 
 
 /*----------------------------------------------*/
@@ -482,34 +495,43 @@ button[type="submit"] {
         font-size: 50px;
     }
 
-    .directions__card {
+    .directions__card {/*
         margin-right: 15px;
-        margin-left: 15px;
-        margin-bottom: 30px;
+        margin-left: 15px;*/
+        margin-bottom: 15px;
         height: 270px;
     }
 
-     .directions__card-1 {
+    .directions__card-1 {
         flex-basis: 41.66666%;
         width: 41.66666%;
-     }
+    }
 
-     .directions__card-2 {
+    .directions__card-2 {
         flex-basis: 50%;    
         width: 50%;
-     }
+    }
 
-     .directions__card-3 {
+    .directions__card-3 {
         flex-basis: 41.66666%;
         width: 41.66666%;
-     }
+    }
 
-     .directions__card-4 {
+    .directions__card-4 {
         display: block;
-     }
+    }
 
-     .directions__card-5 {
+    .directions__card-5 {
         flex-basis: 25%;
         width: 25%;
-     }
+    }
+
+    .directions__card--mobile {
+        display: none;
+    }
+
+    .directions__card--desktop {
+        display: block;
+        background-color: #eec643;
+    }
 }
