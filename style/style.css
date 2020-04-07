@@ -59,6 +59,8 @@ a {
 .container {
     width: 320px;
     margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 /*input:focus {
     border: 1px solid #000;
@@ -275,11 +277,9 @@ button[type="submit"] {
 
 .directions {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     padding-top: 26px;
-    padding-left: 16px;
-    padding-right: 16px;
 }
 
 .directions__title {
@@ -296,27 +296,24 @@ button[type="submit"] {
 }
 
 .directions__card {
-    flex-shrink: 0;
     height: 145px;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.directions__card-4 {
-    display: none;
-    flex-basis: 25%;
-    width: 25%;
-}
-
-.directions__card-5 {
-    flex-basis: 25%;
+.directions__card--rotate {
+    width: 23%;
+    background-color: #eec643;
 }
 
 .directions__card--more {
-    transform: rotate(-90deg);
-    width: 145px;    
-    background-color: #eec643;
-
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #fff;
 }
 
 .mobile-hidden {
@@ -327,18 +324,42 @@ button[type="submit"] {
 
 .about {
     padding-top: 26px;
-    padding-left: 16px;
-    padding-right: 16px;
+}
+
+
+/*----------------------------------*/
+
+.concerts {
+    padding-top: 26px;
 }
 
 
 
 
+
+
+/*----------------------------------*/
+
+
+
+
+
+.contacts {
+    padding-top: 26px;
+}
+
 /*----------------------------------------------*/
 @media (max-width: 1279px) {
     .directions__card-col5--mobile {
-        flex-basis: 75%;
-        width: 75%;
+        margin-right: 16px;
+        flex-basis: 71%;
+        width: 71%;
+    }
+
+    .directions__card--more {
+        margin: 0;
+        transform: rotate(-90deg);
+        font-size: 16px;
     }
 }
 
@@ -347,6 +368,7 @@ button[type="submit"] {
     .container {
         width: 1170px;
         margin: 0 auto;
+        padding: 0;
     }
 
     .promo__container {
@@ -474,9 +496,9 @@ button[type="submit"] {
 
     .directions {
         position: relative;
-        flex-direction: row;
+        padding: 0;
         padding-left: calc(8.33333% + 30px);
-        padding-right: 0;
+        
     }
 
     .directions__title {        
@@ -511,16 +533,14 @@ button[type="submit"] {
         font-size: 50px;
     }
 
-    .directions__card {/*
-        margin-right: 15px;
-        margin-left: 15px;*/
-        margin-bottom: 15px;
+    .directions__card {
+        margin-bottom: 30px;
         height: 270px;
     }
 
     .directions__card-col3 {
-        flex-basis: 25%;
-        width: 25%;
+        flex-basis: 23.0769%;
+        width: 23.0769%;
     }
 
     .directions__card-col5 {
@@ -529,8 +549,8 @@ button[type="submit"] {
     }
 
     .directions__card-col6 {
-        flex-basis: 50%;    
-        width: 50%;
+        flex-basis: 51.54545%;    
+        width: 51.54545%;
     }
 
     .mobile-hidden {
@@ -538,7 +558,7 @@ button[type="submit"] {
     }
 
     .directions__card--more {
-        display: block;
+        font-size: 30px;
     }
 
 /*--------------------------------*/
