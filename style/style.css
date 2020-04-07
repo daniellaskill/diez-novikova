@@ -302,19 +302,19 @@ button[type="submit"] {
 }
 
 .directions__card-1 {
-    flex-basis: 100%;
+    /*flex-basis: 100%;*/
     width: 100%;
 }
 
 .directions__card-2 {
-    flex-basis: 100%;
+    /*flex-basis: 100%;*/
     width: 100%;
     
 }
 
 .directions__card-3 {
-    flex-basis: 100%;
-    width: 100%;
+    flex-basis: 75%;
+    width: 75%;
 }
 
 .directions__card-4 {
@@ -325,14 +325,14 @@ button[type="submit"] {
 
 .directions__card-5 {
     flex-basis: 25%;
-    width: 25%;
+    /*width: 25%;*/
 }
 
 .directions__card--mobile {
-    position: absolute;
-    transform-origin: left bottom;
-    bottom: 0px;
-    right: 30px;
+    /*position: absolute;*/
+    /*transform-origin: left bottom;*/
+    /*bottom: 0px;*/
+    /*right: 30px;*/
     transform: rotate(-90deg);
     width: 145px;    
     background-color: #eec643;
@@ -521,17 +521,14 @@ button[type="submit"] {
         display: block;
     }
 
-    .directions__card-5 {
-        flex-basis: 25%;
-        width: 25%;
-    }
-
     .directions__card--mobile {
         display: none;
     }
 
     .directions__card--desktop {
         display: block;
+        flex-basis: 25%;
+        width: 25%;
         background-color: #eec643;
     }
 }
