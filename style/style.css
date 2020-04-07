@@ -563,9 +563,34 @@ button[type="submit"] {
 
 /*--------------------------------*/
 
-    .about {/*
-        padding-top: 26px;
+    .about {
+        display: flex;
+        flex-direction: row;
+        /*padding-top: 26px;
         padding-left: 55px;
         padding-right: 55px;*/
     }
+
+    .about__teachers,
+    .about__result {
+        height: 470px;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
