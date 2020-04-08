@@ -472,6 +472,7 @@ button[type="submit"] {
         top: 0;
         bottom: 30px;
         left: 0;
+        margin-bottom: 0;
         border: none;
         border-left: 1px solid #eec643;
         border-right: 1px solid #eec643;
@@ -629,9 +630,6 @@ button[type="submit"] {
     .about {
         display: flex;
         flex-direction: row;
-        /*padding-top: 26px;
-        padding-left: 55px;
-        padding-right: 55px;*/
     }
 }
 
@@ -644,27 +642,54 @@ button[type="submit"] {
         flex-basis: 50%;    
         width: 50%;
     }
+}
+
+.about__blog-link {
+    display: flex;
+    height: 470px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (min-width: 1280px) {
+
+    .about__blog {
+        padding: 0 15px;
+        width: 50%;
+    }
+}
+
+.about__studio-link {
+    display: flex;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (min-width: 1280px) {
+
+    .about__studio {
+        flex-shrink: 0;
+        padding: 0 15px;
+        width: 25%;
+    }
+}    
+       
+@media (min-width: 1280px) {
 
     .directions__title--1 {
         flex-basis: 100%;
         width: 100%;
     }
-
-    .about__teachers,
-    .about__result {
-        height: 470px;
-        width: 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .about__studio {
-        flex-shrink: 0;
-        width: 25%;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 }  
+
+@media (min-width: 1280px) {
+
+    .about__form {
+        padding: 0 15px;
+    }
+}
+
+
+
 
 /*----------------------------------*/
 
