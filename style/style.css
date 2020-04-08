@@ -456,14 +456,13 @@ button[type="submit"] {
 }
 
 .directions__title {
+    margin-bottom: 30px;
     border-top: 1px solid #eec643;
     border-bottom: 1px solid #eec643;
 }
 @media (min-width: 1280px) {
 
-    .directions__title {        
-        /*bottom: 30px;
-        left: 55px;*/
+    .directions__title {
         flex-basis: 50%;    
         width: 50%;
     }
@@ -507,6 +506,7 @@ button[type="submit"] {
 
 .directions__card {
     width: 100%;
+    margin-bottom: 15px;
 }
 @media (min-width: 1280px) {
 
@@ -562,8 +562,6 @@ button[type="submit"] {
 }
 
 .directions__card--more {
-    padding-left: 30px;
-    padding-right: 30px;
     /*=100/(100-8.3333)*100/12*3*/
 
     flex-basis: 27.27271%;
@@ -577,12 +575,10 @@ button[type="submit"] {
 
     .directions__card--more {
         margin: 0;
-        padding-top: 30px;
         padding-left: 0px;
         padding-right: 0px;
         flex-basis: 23%;
         width: 23%;
-        transform: rotate(-90deg);
         font-size: 16px;
     }
 }
@@ -597,6 +593,22 @@ button[type="submit"] {
     background-color: #eec643;
 }
 
+@media (max-width: 1279px) {
+
+    .directions__card--more h3 {
+        transform: rotate(-90deg);
+        font-size: ;
+    }
+}
+@media (min-width: 1280px) {
+    
+    .directions__card--more h3 {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: ;
+    }
+}
+        
 .mobile-hidden {
     display: none;
 }
