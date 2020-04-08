@@ -376,7 +376,7 @@ a {
 }
 
 .trial-lesson__title {
-    margin: 20px 30px 26px ;
+    margin: 20px 30px;
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -385,7 +385,8 @@ a {
 }
 
 .trial-lesson__item {
-    margin: 0 30px 60px;
+    margin: 0 30px 53px;
+    padding: 0;
     font-family: 'PT Sans', sans-serif;
     font-weight: normal;
     font-style: normal;
