@@ -571,9 +571,20 @@ button[type="submit"] {
         padding-right: 55px;*/
     }
 
+    .about__item {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%;    
+        width: 50%;
+    }
+    .directions__title--1 {
+    flex-grow: 1;
+    }
+
     .about__teachers,
-    .about__result {
-        height: 470px;
+    .about__result,
+    .about__studio {
+        
         width: 50%;
         background-repeat: no-repeat;
         background-size: cover;
