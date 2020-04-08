@@ -471,7 +471,7 @@ button[type="submit"] {
     .directions__title--rotate {
         position: absolute;
         top: 0;
-        bottom: 0;
+        bottom: 30px;
         left: 0;
         border: none;
         border-left: 1px solid #eec643;
@@ -522,6 +522,11 @@ button[type="submit"] {
         flex-basis: 71%;
         width: 71%;
     }
+
+    .directions__card-col3--mobile {
+        flex-basis: 23%;
+        width: 23%;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -554,14 +559,19 @@ button[type="submit"] {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.directions__link--rotate {
-    width: 23%;
-    background-color: #eec643;
-}
 @media (min-width: 1280px) {
 
     .directions__link {
         height: 270px;
+    }
+}
+
+.directions__link--rotate {
+    background-color: #eec643;
+}
+@media (min-width: 1280px) {
+
+    .directions__link--rotate {
     }
 }
 
@@ -577,6 +587,9 @@ button[type="submit"] {
 
     .directions__card--more {
         margin: 0;
+        padding-top: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
         transform: rotate(-90deg);
         font-size: 16px;
     }
