@@ -376,7 +376,7 @@ a {
 }
 
 .trial-lesson__title {
-    margin: 20px 30px;
+    margin: 20px 25px;
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -385,7 +385,7 @@ a {
 }
 
 .trial-lesson__item {
-    margin: 0 30px 53px;
+    margin: 0 25px 50px;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
     font-weight: normal;
@@ -405,8 +405,9 @@ input, select{
 select {
     width: 100%;
 }
+
 .trial-lesson__field {
-    margin: 0 30px 25px;
+    margin: 0 25px 25px;
     border-bottom: 2px solid #000;
 }
 
@@ -724,8 +725,6 @@ button[type="submit"] {
         display: none;
     }
 }    
-
-
        
 @media (min-width: 1280px) {
 
@@ -742,8 +741,24 @@ button[type="submit"] {
     }
 }
 
+.trial-lesson--about {
+    border-color: #eec643;
+}
 
+.trial-lesson__title--about {
+    color: #eec643; 
+}
 
+.trial-lesson__item--about {
+    margin: 0 25px 142px;
+}
+
+.trial-lesson__field--about {
+    border-color: #eec643;
+}
+button[type="submit"] {
+    background-color: #eec643;
+}
 
 /*----------------------------------*/
 
