@@ -56,6 +56,10 @@ a {
     text-decoration: none;
 }
 
+h3, p {
+    margin: 0;
+}
+
 .container {
     width: 320px;
     margin: 0 auto;
@@ -548,6 +552,8 @@ button[type="submit"] {
 
 .directions__link {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     height: 145px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -556,16 +562,22 @@ button[type="submit"] {
 
     .directions__link {
         height: 270px;
+        flex-direction: row;
     }
+}
+
+.directions__link--mobile {
+    padding: 10px;
 }
 
 .directions__link--desktop {
     display: none;
+    padding: 20px;
 }
 @media (min-width: 1280px) {
 
     .directions__link--desktop {
-        display: block;
+        display: flex;
     }
 
     .directions__link--mobile {
