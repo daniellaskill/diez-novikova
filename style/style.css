@@ -369,10 +369,6 @@ a {
         display: block;
         background-color: #fff;
     }
-
-    .trial-lesson-btn {
-        display: none;
-    }
 }
 
 .trial-lesson__title {
@@ -501,7 +497,7 @@ button[type="submit"] {
 @media (min-width: 1280px) {
 
     .directions__title-topic {
-        padding-top: ;
+        /*padding-top: ;*/
         font-size: 50px;
     }
 }
@@ -635,14 +631,25 @@ button[type="submit"] {
 /*----------------------------------*/
 
 .about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 26px;
 }
-@media (min-width: 1280px) {
+/*@media (min-width: 1280px) {
 
     .about {
         display: flex;
         flex-direction: row;
     }
+}*/
+
+.about__item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 100%;    
+        width: 100%;
 }
 
 @media (min-width: 1280px) {
@@ -696,25 +703,30 @@ button[type="submit"] {
     }
 }
 
-.about__studio-link {
-    display: flex;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+.about__studio {
+    margin-bottom: 15px;
 }
 @media (min-width: 1280px) {
 
     .about__studio {
-        flex-shrink: 0;
+        /*flex-shrink: 0;*/
+        margin-bottom: 0;
         padding: 0 15px;
         width: 25%;
     }
 }    
 
-.about__studio-link--desktop {
-    display: none;
+.about__studio-link {
+    display: flex;
+    height: 145px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.about__studio-link--desktop {
+    display: none;
+    height: 100%;
+}
 @media (min-width: 1280px) {
 
     .about__studio-link--desktop {
@@ -726,13 +738,10 @@ button[type="submit"] {
     }
 }    
        
-@media (min-width: 1280px) {
-
-    .directions__title--1 {
-        flex-basis: 100%;
-        width: 100%;
-    }
-}  
+.directions__title--1 {
+    flex-basis: 100%;
+    width: 100%;
+}
 
 @media (min-width: 1280px) {
 
@@ -757,7 +766,23 @@ button[type="submit"] {
     border-color: #eec643;
 }
 button[type="submit"] {
-    background-color: #eec643;
+    /*background-color: #eec643;*/
+}
+
+.trial-lesson-btn__about {
+    flex-basis: 22.72726%;
+    width: 22.72726%;
+    height: 145px;
+}
+
+.trial-lesson-btn__about h3{
+    margin: 0;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
 }
 
 /*----------------------------------*/
