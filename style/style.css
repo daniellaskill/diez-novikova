@@ -457,13 +457,14 @@ button[type="submit"] {
 }
 
 .directions__title {
-    margin-bottom: 30px;
+    margin-bottom: 18px;
     border-top: 1px solid #eec643;
     border-bottom: 1px solid #eec643;
 }
 @media (min-width: 1280px) {
 
     .directions__title {
+        margin-bottom: 30px;
         flex-basis: 50%;    
         width: 50%;
     }
@@ -763,10 +764,17 @@ button[type="submit"] {
     }
 }    
        
-.directions__title--1 {
-    flex-basis: 100%;
-    width: 100%;
+.about__directions-title {
+    flex-basis: 75%;
+    width: 75%;
 }
+@media (min-width: 1280px) {
+
+    .about__directions-title {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}    
 
 @media (min-width: 1280px) {
 
@@ -813,8 +821,86 @@ button[type="submit"] {
 /*----------------------------------*/
 
 .concerts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 26px;
 }
+@media (min-width: 1280px) {
+
+    .concerts {
+        position: relative;
+        padding-left: calc(8.33333% + 30px);
+    }
+}
+
+.concerts__directions-title {
+    /*flex-basis: 75%;
+    width: 75%;*/
+}
+@media (min-width: 1280px) {
+
+    .concerts__directions-title {
+        /*flex-basis: 100%;
+        width: 100%;*/
+    }
+}    
+
+.concerts__video--large {
+    width: 100%;
+    margin-bottom: 15px;
+}
+@media (min-width: 1280px) {
+
+    .concerts__video--large {
+        margin-bottom: 30px;
+        padding: 0 15px;
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
+
+
+.concerts__link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 187px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (min-width: 1280px) {
+
+    .concerts__link {
+        height: 570px;
+    }
+}
+
+.concerts__link--mobile {
+    padding: 30px 10px 0;
+    flex-basis: 91.66666%;
+    width: 91.66666%;
+}
+
+.concerts__link--desktop {
+    display: none;
+    padding: 26px 30px 0;
+    flex-basis: 72.72724%;
+    width: 72.72724%;
+}
+@media (min-width: 1280px) {
+
+    .concerts__link--desktop {
+        display: block;
+    }
+
+    .concerts__link--mobile {
+        display: none;
+    }
+}
+
+
+
 
 /*----------------------------------*/
 
@@ -822,7 +908,17 @@ button[type="submit"] {
     padding-top: 26px;
 }
 
+.contacts__directions-title {
+    flex-basis: 75%;
+    width: 75%;
+}
+@media (min-width: 1280px) {
 
+    .contacts__directions-title {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}    
   
         
 
@@ -839,4 +935,3 @@ button[type="submit"] {
 
 
 
-}
