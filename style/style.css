@@ -364,7 +364,6 @@ h3, p {
 
     .trial-lesson {
         display: block;
-        background-color: #fff;
     }
 }
 
@@ -393,9 +392,6 @@ input, select{
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
-}
-
-select {
     width: 100%;
 }
 
