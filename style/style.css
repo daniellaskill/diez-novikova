@@ -236,13 +236,6 @@ h3, p {
     background-position: center;
     background-repeat: no-repeat;
 }
-/*@media (min-width: 1280px) {
-
-    .promo__container {
-        width: 1170px;
-        margin: 0 auto;
-    }
-}*/
 
 .promo__inner {
     display: flex;
