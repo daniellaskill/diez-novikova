@@ -440,6 +440,8 @@ button[type="submit"] {
 
     .directions {
         position: relative;
+        margin-left: -15px;
+        margin-right: -15px;
         padding: 0;
         padding-left: 8.33333%;
     }
@@ -635,13 +637,13 @@ button[type="submit"] {
     flex-wrap: wrap;
     padding-top: 26px;
 }
-/*@media (min-width: 1280px) {
+@media (min-width: 1280px) {
 
     .about {
-        display: flex;
-        flex-direction: row;
+        margin-left: -15px;
+        margin-right: -15px;
     }
-}*/
+}
 
 .about__item {
         display: flex;
@@ -818,6 +820,8 @@ button[type="submit"] {
 
     .concerts {
         position: relative;
+        margin-left: -15px;
+        margin-right: -15px;
         padding-left: 8.33333%;
     }
 }    
@@ -909,7 +913,29 @@ button[type="submit"] {
 /*----------------------------------*/
 
 .contacts {
+    display: flex;
+    flex-direction: column;
     padding-top: 26px;
+}
+@media (min-width: 1280px) {
+
+    .contacts {
+        flex-direction: row;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-top: 26px;
+    }
+}   
+
+
+.contacts__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__item-main {
+    display: flex;
+    flex-direction: row;
 }
 
 .contacts__directions-title {
@@ -924,8 +950,19 @@ button[type="submit"] {
     }
 }    
   
-        
+.contacts__item--mobile {
 
+}       
+@media (min-width: 1280px) {
+
+    .contacts__item--desktop {
+        display: block;
+    }
+
+    .contacts__item--mobile {
+        display: none;
+    }
+}
 
 
 
