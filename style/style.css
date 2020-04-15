@@ -441,7 +441,7 @@ button[type="submit"] {
     .directions {
         position: relative;
         padding: 0;
-        padding-left: calc(8.33333% + 30px);
+        padding-left: 8.33333%;
     }
 }
 
@@ -467,7 +467,7 @@ button[type="submit"] {
         border: none;
         border-left: 1px solid #eec643;
         border-right: 1px solid #eec643;
-        width: 8.33333%;
+        width: calc(8.33333% - 15px);
     }
 
     .directions__title--rotate .directions__title-topic {
@@ -476,8 +476,7 @@ button[type="submit"] {
         left: 100%;
         white-space: nowrap;
         transform-origin: left bottom;
-        transform: rotate(-90deg) translateY(-50%);
-        line-height: 1em;
+        transform: rotate(-90deg) translateY(-11%);
     }
 }
 
@@ -819,21 +818,25 @@ button[type="submit"] {
 
     .concerts {
         position: relative;
-        padding-left: calc(8.33333% + 30px);
+        padding-left: 8.33333%;
     }
-}
+}    
 
-.concerts__directions-title {
-    /*flex-basis: 75%;
-    width: 75%;*/
+.slider {
+    display: flex;
+    flex-direction: row;
+    /*flex-basis: 100%;
+    width: 100%;*/ 
+
 }
 @media (min-width: 1280px) {
 
-    .concerts__directions-title {
-        /*flex-basis: 100%;
-        width: 100%;*/
+    .slider {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 570px;
     }
-}    
+}
 
 .concerts__video--large {
     width: 100%;
@@ -842,26 +845,38 @@ button[type="submit"] {
 @media (min-width: 1280px) {
 
     .concerts__video--large {
+        display: flex;
         margin-bottom: 30px;
         padding: 0 15px;
         flex-basis: 100%;
-        width: 100%;
     }
 }
 
+.concerts__video--mini {
+    
+}
+@media (min-width: 1280px) {
+
+    .concerts__video--mini {
+        display: flex;
+        margin-bottom: 30px;
+        padding: 0 15px;
+        flex-basis: 28%;
+    }
+}
 
 .concerts__link {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 187px;
+    /*height: 187px;*/
     background-repeat: no-repeat;
     background-size: cover;
 }
 @media (min-width: 1280px) {
 
     .concerts__link {
-        height: 570px;
+        /*height: 570px;*/
     }
 }
 
