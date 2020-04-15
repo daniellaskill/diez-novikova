@@ -981,7 +981,8 @@ button[type="submit"] {
 
 .contacts__address--mobile {
     font-size: 16px;
-}      
+}    
+  
 .contacts__address--desktop {
         display: none;
         font-size: 20px;
