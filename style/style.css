@@ -496,6 +496,10 @@ button[type="submit"] {
         /*padding-top: ;*/
         font-size: 50px;
     }
+
+    .directions__title-topic--horizontal {
+        padding-left: 26px;
+    }
 }
 
 .directions__card {
