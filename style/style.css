@@ -118,6 +118,13 @@ h3, p {
     flex-basis: 33.33333%;
     width: 33.33333%;
 }
+@media (max-width: 1279px) {
+
+    .logo {
+        position: relative;
+        z-index: 1;
+    }
+}
 @media (min-width: 1280px) {
 
     .logo {
@@ -127,7 +134,7 @@ h3, p {
 }
 
 .logo img{
-    width: 66px;
+    width: 64px;
     height: 26px;
 }
 @media (min-width: 1280px) {
@@ -155,16 +162,24 @@ h3, p {
     }
 }
 
-.nav-main--active .nav-main__list {
+.nav-main__list.nav-main--active {
     display: block;
     flex-basis: 100%;
     width: 100%;
+    background-color: #000;
 }
 
 .nav-main__list {
     display: none;
     margin: 0;
     padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 60px;
+    padding-left: 30px;
+    background-color: #000;
 }
 @media (min-width: 1280px) {
 
@@ -207,6 +222,12 @@ h3, p {
     flex-basis: 16.66666%;
     width: 16.66666%;
 }
+
+.toggler {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
 @media (min-width: 1280px) {
 
     .toggler {
@@ -214,21 +235,6 @@ h3, p {
     }
 }
 
-/*.j-burger .toggler {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    border: none;
-    line-height: 30px;
-    user-select: none;
-    background: transparent;
-    cursor: pointer;
-}*/
 
 /*-----------------------------------*/
 
