@@ -162,25 +162,23 @@ h3, p {
     }
 }
 
-.nav-main__list.nav-main--active {
-    display: block;
-    flex-basis: 100%;
-    width: 100%;
-    background-color: #000;
-}
-
 .nav-main__list {
     display: none;
     margin: 0;
     padding: 10px 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    padding-top: 60px;
-    padding-left: 30px;
-    background-color: #000;
 }
+@media (max-width: 1279px) {
+    
+    .nav-main__list {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding-top: 60px;
+        padding-left: 30px;
+        background-color: #000;
+    }
+} 
 @media (min-width: 1280px) {
 
     .nav-main__list {
@@ -188,6 +186,13 @@ h3, p {
         margin: 0;
         padding: 0;
     }
+}
+
+.nav-main__list.nav-main--active {
+    display: block;
+    flex-basis: 100%;
+    width: 100%;
+    background-color: #000;
 }
 
 .nav-main__item {
@@ -908,6 +913,7 @@ button[type="submit"] {
 
     .concerts__video--large {
         display: flex;
+        flex-grow: 1;
         margin-bottom: 30px;
         padding: 0 15px;
         flex-basis: 100%;
@@ -931,14 +937,13 @@ button[type="submit"] {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /*height: 187px;*/
     background-repeat: no-repeat;
     background-size: cover;
 }
 @media (min-width: 1280px) {
 
     .concerts__link {
-        /*height: 570px;*/
+
     }
 }
 
