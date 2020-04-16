@@ -132,12 +132,6 @@
 							<h3>Состав</h3>
 							<p>Тебя будут обучать профессионалы с высшим музыкальным образованием</p>
 						</a>
-							<!-- В ссылку добавить  
-							<picture>
-								<source media="(min-width: 1280px)" srcset="images/teachers_1280.png">
-								<source media="(min-width: 320px)" srcset="images/teachers_320.jpg">
-								<img src="images/teachers_320.jpg" alt="" width="288px">
-							</picture> -->
 					</div>
 
 					<div class="about__blog">
@@ -254,21 +248,21 @@
 							<span>СПБ, 6-я Линия ВО, 42</span>
 						</div>
 					</div>
-					<div class="map">
-						<map name=""></map>
+					<div class="map" id='map'>
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A48f4359f5da1f25b7764c13f9de9ae48bf5a69f1456bb76682899ab793a87811&amp;source=constructor" frameborder="0"></iframe>
 					</div>
 				</div>
-				<div class="form j-form">
-						<form class="trial-lesson j-trial-lesson" action="#" method="post">
-							<h3 class="trial-lesson__title">Вводный урок</h3>
-							<p class="trial-lesson__item">Попробуйте любые направления бесплатно</p>
-							<div class="trial-lesson__field">
-								<input type="text" placeholder="Имя" name="name" id="" required>
-							</div>
-							<div class="trial-lesson__field">
-								<input type="tel" placeholder="Телефон" name="tel" id="" pattern="[0-9]{7,13}" title="+7 (___) ___-__-__" required>
-							</div>
-							<div class="trial-lesson__field">
+				<div class="form about__form j-form">
+					<form class="trial-lesson trial-lesson--about j-trial-lesson" action="#" method="post">
+						<h3 class="trial-lesson__title trial-lesson__title--about">Вводный урок</h3>
+						<p class="trial-lesson__item trial-lesson__item--about">Попробуйте любые направления бесплатно</p>
+						<div class="trial-lesson__field trial-lesson__field--about">
+							<input type="text" placeholder="Имя" name="name" id="" required>
+						</div>
+						<div class="trial-lesson__field trial-lesson__field--about">
+							<input type="tel" placeholder="Телефон" name="tel" id="" pattern="[0-9]{7,13}" title="+7 (___) ___-__-__" required>
+						</div>
+						<div class="trial-lesson__field trial-lesson__field--about">
 								<select> 
 									<option selected="selected" disabled="disabled">Направления</option>
 									<option>Гитара</option>
@@ -276,9 +270,9 @@
 									<option>Фортепиано</option>
 									<option>Лекции</option>
 								</select>
-							</div>
-							<button type="submit">Записаться</button>
-						</form>
+						</div>
+						<button type="submit">Записаться</button>
+					</form>
 				</div>
 				<button class="trial-lesson-btn j-trial-lesson-btn">Вводный урок</button>
 			</section>
@@ -286,7 +280,29 @@
 		
 
 	</main>
-	<footer></footer>
+	
+	<footer class="footer--desktop">
+		<div class="container">
+			<div class="footer__menu">
+				<a class="footer__logo" href="#">
+					<img src="images/Diez.svg" alt="Diez">
+				</a>
+				<nav class="footer__nav">
+					<ul class="footer__nav-item">
+						<li class="footer__nav-link"><a href="#">Youtube</a></li>
+						<li class="footer__nav-link"><a href="#">Instagram</a></li>
+						<li class="footer__nav-link"><a href="#">Facebook</a></li>
+						<li class="footer__nav-link"><a href="#">Vkontakte</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>	
+	</footer>
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+  type="text/javascript">
+  	</script>
 	<script src="js/jquery.js"></script>
 	<script src="js/script.js"></script>
 </body>
