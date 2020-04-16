@@ -44,6 +44,10 @@
     box-sizing: border-box;
 }
 
+.html-hide.html-hide--active {
+    overflow: hidden;
+}
+
 body {
     margin: 0;
     font-family: 'PT Sans', sans-serif;
@@ -339,6 +343,23 @@ h3, p {
     }
 }
 
+.form-closed-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+}
+@media (min-width: 1280px) {
+    .form-closed-btn {
+        display: none;
+    }
+}
+
 @media (max-width: 1279px) {
 
     .form {
@@ -352,21 +373,21 @@ h3, p {
         background-color: #fff;
     }
 }
-
-.form.form--active  {
-    display: flex;
-    flex-basis: 100%;
-    width: 100%;
-}
 @media (min-width: 1280px) {
     
     .form {
         display: flex;
         padding-left: 10px;
-        padding-right: 10px;
+        padding-right: 17px;
         flex-basis: 25%;
         width: 25%; 
     }
+}
+
+.form.form--active  {
+    display: flex;
+    flex-basis: 100%;
+    width: 100%;
 }
 
 .trial-lesson {
