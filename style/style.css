@@ -889,8 +889,7 @@ button[type="submit"] {
 .slider {
     display: flex;
     flex-direction: row;
-    /*flex-basis: 100%;
-    width: 100%;*/ 
+    width: 187px;
 }
 @media (max-width: 1279px) {
     
@@ -941,7 +940,7 @@ button[type="submit"] {
 
 .concerts__link {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     background-repeat: no-repeat;
     background-size: cover;
@@ -949,7 +948,7 @@ button[type="submit"] {
 @media (min-width: 1280px) {
 
     .concerts__link {
-
+        flex-direction: column;
     }
 }
 
@@ -975,6 +974,13 @@ button[type="submit"] {
         display: none;
     }
 }
+
+
+
+
+
+
+
 
 
 /*----------------------------------*/

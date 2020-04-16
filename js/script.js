@@ -26,3 +26,24 @@ $(window).scroll(function() {
     if (top < 100) $(".j-page-header").removeClass("page-header--active");
     else $(".j-page-header").addClass("page-header--active");
 });
+
+
+// $(document).ready(function() {
+// 	$('#slider').slick();
+
+// 		function changeWindow() {
+// 			if($(window).width() > 320) {
+// 			console.log('slider off');
+// 			}
+// 			else {
+// 			console.log('slider on');
+// 			}
+// 		}
+
+// 		changeWindow ();
+
+// 		$(window).on('resize', function() {
+// 			changeWindow ();
+// 		});
+// });
+		// тоже что и выше - $(window).on('load resize', WindowSize);
