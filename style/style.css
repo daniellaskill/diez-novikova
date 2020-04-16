@@ -62,7 +62,7 @@ h3, p {
 }
 
 .container {
-    width: 320px;
+    /*margin: 0 auto;*/
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -336,8 +336,22 @@ h3, p {
     }
 }
 
-.form--active .form {
-    display: block;
+@media (max-width: 1279px) {
+
+    .form {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 15px; 
+        background-color: #fff;
+    }
+}
+
+.form.form--active  {
+    display: flex;
     flex-basis: 100%;
     width: 100%;
 }
@@ -345,7 +359,6 @@ h3, p {
     
     .form {
         display: flex;
-        flex-direction: column;
         padding-left: 10px;
         padding-right: 10px;
         flex-basis: 25%;
@@ -354,18 +367,11 @@ h3, p {
 }
 
 .trial-lesson {
-    display: none;
-    flex-basis: 100%;
-    width: 100%; 
+    display: flex;
+    flex-direction: column;
     padding: 0;
     border: 1px solid #000;
     background-color: #fff;
-}
-@media (min-width: 1280px) {
-
-    .trial-lesson {
-        display: block;
-    }
 }
 
 .trial-lesson__title {
@@ -401,6 +407,18 @@ input, select{
     border-bottom: 2px solid #000;
 }
 
+button[type="submit"] {
+    margin-top: 60px;
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #fff;
+    border-width: 0px;
+    background-color: #000;
+}
+
 .trial-lesson-btn {
     padding: 26px 0;
     font-size: 16px;
@@ -416,17 +434,7 @@ input, select{
     }
 }
 
-button[type="submit"] {
-    margin-top: 60px;
-    width: 100%;
-    height: 70px;
-    font-size: 20px;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-    color: #fff;
-    border-width: 0px;
-    background-color: #000;
-}
+
 
 
 /*-----------------------------------*/
@@ -795,6 +803,7 @@ button[type="submit"] {
 .trial-lesson__field--about {
     border-color: #eec643;
 }
+
 button[type="submit"] {
     /*background-color: #eec643;*/
 }
@@ -836,6 +845,7 @@ button[type="submit"] {
 .slider {
     display: flex;
     flex-direction: row;
+    overflow: hidden;
     /*flex-basis: 100%;
     width: 100%;*/ 
 
