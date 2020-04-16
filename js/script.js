@@ -8,15 +8,21 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$(".j-trial-lesson-btn").click(function(){
-		$(".j-form-promo").toggleClass("form--active");
+		$(".j-form-promo").toggleClass(".form--active");
 		// $(".j-trial-lesson").slideToggle();
-		$("j-html-hide").addClass("html-hide--active");
+		$(".j-html-hide").addClass("html-hide--active");
 	})
 });
 
 $(document).ready(function() {
 	$(".j-form-closed-btn").click(function(){
 		$(".j-form-promo").removeClass("form--active");
-		$("j-html-hide").removeClass("html-hide--active");
+		$(".j-html-hide").removeClass("html-hide--active");
 	})
+});
+
+$(window).scroll(function() {
+    var top = $(document).scrollTop();
+    if (top < 100) $(".j-page-header").removeClass("page-header--active");
+    else $(".j-page-header").addClass("page-header--active");
 });

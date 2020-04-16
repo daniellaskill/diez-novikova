@@ -87,13 +87,11 @@ h3, p {
     width: 100%;
 }
 
-/*@media (min-width: 1280px) {
+.page-header--active {
+    z-index: 1;
+    background-color: #fff;
+}
 
-    .page-header__container {
-        width: 1170px;
-        margin: 0 auto;
-    }
-}*/
 
 .page-header__inner {
     display: flex;
@@ -879,10 +877,13 @@ button[type="submit"] {
 .slider {
     display: flex;
     flex-direction: row;
-    overflow: hidden;
     /*flex-basis: 100%;
     width: 100%;*/ 
-
+}
+@media (max-width: 1279px) {
+    .slider {
+        overflow: hidden;
+    }
 }
 @media (min-width: 1280px) {
 
