@@ -28,22 +28,65 @@ $(window).scroll(function() {
 });
 
 
-// $(document).ready(function() {
-// 	$('#slider').slick();
+$(document).ready(function() {
+	$("#slider").slick();
 
-// 		function changeWindow() {
-// 			if($(window).width() > 320) {
-// 			console.log('slider off');
-// 			}
-// 			else {
-// 			console.log('slider on');
-// 			}
-// 		}
+});
 
-// 		changeWindow ();
 
-// 		$(window).on('resize', function() {
-// 			changeWindow ();
-// 		});
+
+
+
+// // Флаг включённости слайдера
+// var slickSliderActive = false;
+
+// // Включение или выключение слайдера (в зависимости от ширины)
+// function checkSlider(){    
+  
+//   // Если вьюпорт уже чем 768 
+//   if( $(window).width() < 1280 - getScroll() ) {
+    
+//     // Если флаг включённости опущен, то включим и поднимем флаг
+//     if(slickSliderActive == false) {
+//       $('#slider').slick({
+//         dots: false,
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       });
+//       slickSliderActive = true;
+//     }
+  
+//   } 
+//   // Иначе (вьюпорт НЕ уже чем 768)
+//   else {
+    
+//     // Если флаг включённости поднят, выключаем и опускаем флаг
+//     if(slickSliderActive == true) {
+//       $('#slider').slick('unslick');
+//       slickSliderActive = false;
+//     }
+    
+//   }
+// };
+
+// // По готовности DOM...
+// // $(document).ready(function(){
+//   checkSlider();
+// // });
+
+// // По любому изменению размера вьюпорта...
+// $(window).on('resize', function(){
+//    checkSlider();
 // });
-		// тоже что и выше - $(window).on('load resize', WindowSize);
+
+// function getScroll(){
+//   var div = document.createElement('slider');
+//   div.style.overflowY = 'scroll';
+//   div.style.width = '50px';
+//   div.style.height = '50px';
+//   div.style.visibility = 'hidden';
+//   document.body.appendChild(div);
+//   var scrollWidth = div.offsetWidth - div.clientWidth;
+//   document.body.removeChild(div);
+//   return scrollWidth;
+// }
