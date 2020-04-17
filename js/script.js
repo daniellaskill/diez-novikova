@@ -7,11 +7,6 @@ $(document).ready(function() {
 });
 
 
-// $(document).ready(function() {
-// 		$(".j-html-hide").removeClass("html-hide--active");
-// });
-
-
 $(document).ready(function() {
 	$(".j-trial-lesson-btn").click(function(){
 		$(".j-form-promo").toggleClass("form--active");
@@ -30,16 +25,40 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
     var top = $(document).scrollTop();
-    if (top < 100) $(".j-page-header").removeClass("page-header--active");
-    else $(".j-page-header").addClass("page-header--active");
+    if (top < 100) 
+    	$(".j-page-header").removeClass("page-header--active");
+
+    else 
+    	$(".j-page-header").addClass("page-header--active");
 });
 
 
-$(document).ready(function() {
-	$("#slider").slick();
 
+$(document).ready(function checkSlider() {
+
+		if ($(window).width() < 1280 - getScroll()) {
+			$("#slider").slick();
+		}
+
+		else {
+			$("#slider").slick("unslick");
+		}
 });
 
+$(document).ready(function(){
+  	checkSlider();
+});
 
+function getScroll(){
 
+	  var div = document.createElement('div');
+	  div.style.overflowY = 'scroll';
+	  div.style.width = '50px';
+	  div.style.height = '50px';
+	  div.style.visibility = 'hidden';
+	  document.body.appendChild(div);
+	  var scrollWidth = div.offsetWidth - div.clientWidth;
+	  document.body.removeChild(div);
+	  return scrollWidth;
+	}
 

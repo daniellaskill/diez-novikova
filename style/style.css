@@ -87,6 +87,7 @@ h3, p {
 }
 
 .page-header--active {
+    z-index: 1;
     overflow: hidden;
     background-color: #fff;
 }
