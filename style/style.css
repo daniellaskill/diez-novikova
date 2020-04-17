@@ -88,7 +88,9 @@ h3, p {
 }
 
 .page-header--active {
+    position: relative;
     z-index: 1;
+    overflow: hidden;
     background-color: #fff;
 }
 
@@ -913,12 +915,18 @@ button[type="submit"] {
     left: 0;
 
 }
-.slick-prev:after {
+.slick-prev:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     width: 10px;
     height: 10px;
-    border-left: 2px solid #000;
-    border-bottom:  2px solid #000;
-    transform: rotate(45deg);
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(-45deg);
 }
     
 .slick-next {
