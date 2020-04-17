@@ -548,7 +548,7 @@ button[type="submit"] {
 .directions__title {
     flex-basis: 75%;
     width: 75%;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     border-top: 1px solid #eec643;
     border-bottom: 1px solid #eec643;
 }
@@ -683,6 +683,9 @@ button[type="submit"] {
         display: none;
     }
 }
+
+
+
 
 
 .directions__card--more {
