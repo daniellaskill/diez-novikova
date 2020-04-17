@@ -618,6 +618,22 @@ button[type="submit"] {
     }
 }
 
+.directions__card:nth-child(2) {
+    order: 3;
+}
+.directions__card:nth-child(3) {
+    order: 2;
+}
+.directions__card:nth-child(4) {
+    order: 4;
+}
+.directions__card:nth-child(5) {
+    order: 5;
+}
+.directions__card:nth-child(6) {
+    order: 6;
+}
+
 @media (max-width: 1279px) {
     .directions__card-col5--mobile {
         margin-right: 16px;
@@ -683,10 +699,6 @@ button[type="submit"] {
         display: none;
     }
 }
-
-
-
-
 
 .directions__card--more {
     /*=100/(100-8.3333)*100/12*3*/
