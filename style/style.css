@@ -44,7 +44,7 @@
     box-sizing: border-box;
 }
 
-.html-hide.html-hide--active {
+.html-hide--active {
     overflow: hidden;
 }
 
@@ -87,8 +87,6 @@ h3, p {
 }
 
 .page-header--active {
-    position: relative;
-    z-index: 1;
     overflow: hidden;
     background-color: #fff;
 }
@@ -100,7 +98,7 @@ h3, p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 23px 16px;
+    padding: 23px 0;
 }
 @media (min-width: 1280px) {
 
@@ -176,7 +174,6 @@ h3, p {
         right: 0;
         left: 0;
         padding-top: 60px;
-        padding-left: 30px;
         background-color: #000;
     }
 } 
@@ -256,7 +253,7 @@ h3, p {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding: 50px 16px 33px;
+    padding: 50px 0 33px;
 }
 @media (min-width: 1280px) {
 
@@ -462,7 +459,7 @@ button[type="submit"] {
 }
 
 .trial-lesson-btn {
-    padding: 26px 0;
+    padding: 23px 0;
     font-size: 16px;
     text-transform: uppercase;
     color: #fff;
