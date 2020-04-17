@@ -66,7 +66,6 @@ h3, p {
 }
 
 .container {
-    /*margin: 0 auto;*/
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -912,28 +911,40 @@ button[type="submit"] {
 }
 
 .slick-prev {
+    top: 47%;
     left: 0;
-
 }
 .slick-prev:before {
     content: "";
     position: absolute;
     top: 0;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     margin: auto;
     width: 10px;
     height: 10px;
     border-top: 2px solid #000;
     border-right: 2px solid #000;
-    transform: rotate(-45deg);
+    transform: rotate(-135deg);
 }
     
 .slick-next {
+    top: 47%;
     right: 0;
-
 }
-
+.slick-next:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(45deg);
+}
 
 
 @media (max-width: 1279px) {
