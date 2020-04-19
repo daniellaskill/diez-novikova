@@ -88,7 +88,7 @@ h3, p {
 
 .page-header--active {
     z-index: 1;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background-color: #fff;
 }
 
@@ -421,6 +421,7 @@ h3, p {
 
     .form {
         position: fixed;
+        z-index: 2;
         display: none;
         top: 0;
         left: 0;
