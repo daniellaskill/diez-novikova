@@ -45,10 +45,6 @@ $(document).ready(function checkSlider() {
 		}
 });
 
-$(document).ready(function(){
-  	checkSlider();
-});
-
 function getScroll(){
 
 	  var div = document.createElement('div');
