@@ -1453,3 +1453,40 @@ iframe {
     
 
 
+/*_________________________________*/
+
+
+.video-mobile {
+    width: 220px;
+}
+
+.video-desktop {
+    display: none;
+}
+
+@media (max-width: 1279px) {
+    
+    
+}
+
+@media (min-width: 1280px) {
+    
+    .video-desktop {
+        display: block;
+    }
+
+    .video-mobile {
+        display: none;
+    }
+
+}
+
+.video__play {
+    position: absolute;
+    top: 40%;
+    /*left: 40%;*/
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
