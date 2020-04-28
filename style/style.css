@@ -1388,6 +1388,13 @@ iframe {
     }
 }
 
+@media (min-width: 1280px) {
+
+    .contacts__form {
+        margin-bottom: 0px;
+        padding: 0 15px;
+    }
+}
 
 /*------------------------------*/
 
