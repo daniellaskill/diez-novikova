@@ -1274,21 +1274,6 @@ button[type="submit"] {
     line-height: 1.3;
 }
 
-/*.play-btn {
-    position: absolute;
-    top: 40%;
-    left: 16%;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 15px 0 15px 25px;
-    border-color: transparent transparent transparent #eec643;
-}*/
-
-
-
-
-
 
 /*----------------------------------*/
 
@@ -1491,6 +1476,10 @@ iframe {
     width: 220px;
 }
 
+.video-mobile.video--active {
+    width: 220px;
+}
+
 .video-desktop {
     display: none;
 }
@@ -1513,15 +1502,17 @@ iframe {
 }
 
 .video__play {
-    position: absolute;
-    top: 40%;
-    /*left: 40%;*/
-    width: 50px;
-    height: 50px;
-    background-color: red;
+    position: relative;
+    
+    width: 20px;
+    height: 20px;
 }
 
-.video__img {
-    width: 100%;
-    height: 100%;
+.video__play:after {
+    content: ''; 
+    position: absolute; 
+    /*left: 20px; */
+    /*bottom: -20px;*/
+    border: 20px solid transparent; 
+    border-left: 20px solid green;
 }

@@ -63,6 +63,8 @@ function getScroll(){
 $(document).ready(function() {
 
 	$("#video__play").click(function(){
+
+		
 		var dataYoutube = $(this).parents('.j-video').attr('data-youtube');
 
 		$(this).parents('.j-video').html('<iframe src="https://www.youtube.com/embed/'+ dataYoutube +'?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
