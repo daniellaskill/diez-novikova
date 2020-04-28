@@ -539,6 +539,7 @@ button[type="submit"] {
 
     .directions {
         position: relative;
+        margin-top: 90px;
         margin-left: -15px;
         margin-right: -15px;
         padding: 0;
@@ -776,15 +777,6 @@ button[type="submit"] {
     }
 }
 
-
-
-
-
-
-
-
-
-
 /*_____________________*/
 
 
@@ -888,8 +880,10 @@ button[type="submit"] {
 @media (min-width: 1280px) {
 
     .about {
+        margin-top: 60px;
         margin-left: -15px;
         margin-right: -15px;
+        padding-top: 0;
     }
 }
 
@@ -1070,6 +1064,7 @@ button[type="submit"] {
 
     .concerts {
         position: relative;
+        margin-top: 60px;
         margin-left: -15px;
         margin-right: -15px;
         padding-left: 8.33333%;
@@ -1306,9 +1301,10 @@ button[type="submit"] {
 
     .contacts {
         flex-direction: row;
+        margin-top: 90px;
         margin-left: -15px;
         margin-right: -15px;
-        padding-top: 26px;
+        padding-top: 0;
     }
 }   
 
@@ -1442,7 +1438,7 @@ iframe {
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
-    margin: 90px 0 55px;
+    margin: 90px 0 55px -15px;
     padding: 0;
 }
 
