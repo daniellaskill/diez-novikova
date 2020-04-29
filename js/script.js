@@ -87,43 +87,33 @@ $(document).ready(function() {
 
 
 
+ymaps.ready(function () {
+ var myMap = new ymaps.Map('map', {
+   center: [59.941993, 30.279423],
+   zoom: 14
+  }, {
+   searchControlProvider: 'yandex#search'
+  }),
 
+  myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+   hintContent: 'Собственный значок метки',
+   balloonContent: 'Это красивая метка'
+  }, {
+   // Опции.
+   // Необходимо указать данный тип макета.
+   iconLayout: 'default#image',
+   // Своё изображение иконки метки.
+   iconImageHref: 'images/geotag.png',
+   // Размеры метки.
+   iconImageSize: [30, 42],
+   // Смещение левого верхнего угла иконки относительно
+   // её "ножки" (точки привязки).
+   iconImageOffset: [-15, -45]
+  });
 
+ myMap.geoObjects
+  .add(myPlacemark);
+});
 
-
-
-
-/*ymaps.ready(function () {
-    var diezMap = new ymaps.Map('#map', {
-            center: [59.941993, 30.279423],
-            zoom: 2
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-
-        // Создаём макет содержимого.
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: 'images/geotag.png',
-            // Размеры метки.
-            iconImageSize: [30, 42],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-5, -38]
-        }),
-
-    myMap.geoObjects
-        .add(myPlacemark);
-});*/
 
 
