@@ -39,9 +39,19 @@ $(document).ready(function checkSlider() {
 			$("#slider").slick();
 		}
 
-		else {
-			$("#slider").slick("unslick");
-		}
+		// else {
+		// 	$("#slider").slick("unslick");
+		// }
+
+		$(window).resize(function() {
+			if ($(window).width() < 1280 - getScroll()) {
+				$("#slider").slick();
+			}
+
+			else {
+				$("#slider").slick("unslick");
+			}
+		});
 });
 
 function getScroll(){
@@ -62,15 +72,16 @@ function getScroll(){
 
 $(document).ready(function() {
 
-var dataYoutube = $(this).parents('.concerts__link').attr('data-youtube');
-
 	$(".j-video__play").click(function(){
+		var dataYoutube = $(this).attr('data-youtube');
+
 		$(".popup").toggleClass("popup--active");
-		$(".popup").attr("iframe").html('<iframe src="https://www.youtube.com/embed/'+ dataYoutube +'?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+		$(".popup iframe").attr('src', 'https://www.youtube.com/embed/'+ dataYoutube +'?autoplay=1');
 	});
 
 	$(".j-popup-closed-btn").click(function(){
 		$(".popup").removeClass("popup--active");
+		$(".popup iframe").attr('src', '');
 	});
 });
 
