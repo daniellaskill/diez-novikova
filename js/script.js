@@ -103,12 +103,12 @@ ymaps.ready(function () {
    // Необходимо указать данный тип макета.
    iconLayout: 'default#image',
    // Своё изображение иконки метки.
-   iconImageHref: 'images/geotag.png',
+   iconImageHref: 'images/geotag.svg',
    // Размеры метки.
-   iconImageSize: [30, 42],
+   iconImageSize: [38, 49],
    // Смещение левого верхнего угла иконки относительно
    // её "ножки" (точки привязки).
-   iconImageOffset: [-15, -45]
+   iconImageOffset: [-19, -49]
   });
 
  myMap.geoObjects
