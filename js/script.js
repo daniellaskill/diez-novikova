@@ -66,7 +66,7 @@ var dataYoutube = $(this).parents('.concerts__link').attr('data-youtube');
 
 	$(".j-video__play").click(function(){
 		$(".popup").toggleClass("popup--active");
-		$('<iframe src="https://www.youtube.com/embed/'+ dataYoutube +'?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>').appendTo('.popup--active');
+		$(".popup").attr("iframe").html('<iframe src="https://www.youtube.com/embed/'+ dataYoutube +'?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
 	});
 
 	$(".j-popup-closed-btn").click(function(){
